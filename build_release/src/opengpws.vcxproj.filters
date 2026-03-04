@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="18.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="C:\Users\brodh\Dropbox\FS_utts\development\opengpws\src\dbg_log.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\brodh\Dropbox\FS_utts\development\opengpws\src\egpws.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\brodh\Dropbox\FS_utts\development\opengpws\src\snd_sys.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\brodh\Dropbox\FS_utts\development\opengpws\src\terr.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\brodh\Dropbox\FS_utts\development\opengpws\src\xplane.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="C:\Users\brodh\Dropbox\FS_utts\development\opengpws\api\opengpws\xplane_api.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\brodh\Dropbox\FS_utts\development\opengpws\src\dbg_log.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\brodh\Dropbox\FS_utts\development\opengpws\src\egpws.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\brodh\Dropbox\FS_utts\development\opengpws\src\snd_sys.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\brodh\Dropbox\FS_utts\development\opengpws\src\terr.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\brodh\Dropbox\FS_utts\development\opengpws\src\xplane.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\brodh\Dropbox\FS_utts\development\opengpws\src\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{BA96EF22-4E9A-398B-857C-E4BD1F3209C9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{780CAF6A-DBEA-37E3-8150-B2458295AA0E}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

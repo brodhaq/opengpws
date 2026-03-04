@@ -1,3 +1,4 @@
+
 # CDDL HEADER START
 #
 # This file and its contents are supplied under the terms of the
@@ -13,6 +14,9 @@
 
 # Copyright 2017 Saso Kiselkov. All rights reserved.
 
+cmake_minimum_required(VERSION 3.10)
+project(opengpws)
+
 if(COMMAND cmake_policy)
 	cmake_policy(SET CMP0003 NEW)
 endif(COMMAND cmake_policy)
@@ -23,4 +27,3 @@ ENDIF()
 message(STATUS "Current build type is : ${CMAKE_BUILD_TYPE}")
 
 add_subdirectory(src)
-cmake_minimum_required(VERSION 2.8)

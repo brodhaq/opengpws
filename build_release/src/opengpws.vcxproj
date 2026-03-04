@@ -1,0 +1,384 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="18.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|x64">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|x64">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{BE2CC3FD-A319-379D-950D-5CE6C301CAFD}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <WindowsTargetPlatformVersion>10.0.26100.0</WindowsTargetPlatformVersion>
+    <Platform>x64</Platform>
+    <ProjectName>opengpws</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v145</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v145</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v145</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v145</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\brodh\Dropbox\FS_utts\development\OpenGPWS\win_x64\Debug\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">opengpws.dir\Debug\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">OpenGPWS</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.xpl</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\brodh\Dropbox\FS_utts\development\OpenGPWS\win_x64\Release\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">opengpws.dir\Release\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">OpenGPWS</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.xpl</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Users\brodh\Dropbox\FS_utts\development\OpenGPWS\win_x64\MinSizeRel\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">opengpws.dir\MinSizeRel\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">OpenGPWS</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">.xpl</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\brodh\Dropbox\FS_utts\development\OpenGPWS\win_x64\RelWithDebInfo\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">opengpws.dir\RelWithDebInfo\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">OpenGPWS</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">.xpl</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</GenerateManifest>
+  </PropertyGroup>
+  <PropertyGroup />
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Users\brodh\Dropbox\FS_utts\development\opengpws\src\opengpws;C:\Users\brodh\Dropbox\FS_utts\development\opengpws\src\PUBLIC;C:\Users\brodh\Dropbox\FS_utts\development\libacfutils\src;\include;C:\Users\brodh\Dropbox\FS_utts\development\opengpws\src\..;C:\Users\brodh\Dropbox\FS_utts\development\opengpws\api\opengpws;C:\Program Files (x86)\OpenAL 1.1 SDK\include;C:\Users\brodh\Dropbox\FS_utts\development\libraries\shapelib;C:\Users\brodh\Dropbox\FS_utts\development\libraries\glew-2.3.1\include;C:\Users\brodh\Dropbox\FS_utts\development\libacfutils\SDK\CHeaders\XPLM;C:\Users\brodh\Dropbox\FS_utts\development\libacfutils\SDK\CHeaders\Widgets;C:\Users\brodh\Dropbox\FS_utts\development\libacfutils\SDK\CHeaders\Wrappers;\include\AL;C:\Users\brodh\Dropbox\FS_utts\development\opengpws\..\api;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <ForceConformanceInForLoopScope></ForceConformanceInForLoopScope>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <MinimalRebuild></MinimalRebuild>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RemoveUnreferencedCodeData></RemoveUnreferencedCodeData>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <SupportJustMyCode></SupportJustMyCode>
+      <TreatWChar_tAsBuiltInType></TreatWChar_tAsBuiltInType>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;_GNU_SOURCE;_FILE_OFFSET_BITS=64;DEBUG;CHECK_RESULT_USED=__attribute__((warn_unused_result));PLUGIN_VERSION="";XPLM200=1;XPLM210=1;GLEW_BUILD=GLEW_STATIC;APL=0;IBM=1;LIN=0;_WIN32_WINNT=0x0600;CMAKE_INTDIR="Debug";opengpws_EXPORTS</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_DEBUG;_WINDOWS;_GNU_SOURCE;_FILE_OFFSET_BITS=64;DEBUG;CHECK_RESULT_USED=__attribute__((warn_unused_result));PLUGIN_VERSION=\"\";XPLM200=1;XPLM210=1;GLEW_BUILD=GLEW_STATIC;APL=0;IBM=1;LIN=0;_WIN32_WINNT=0x0600;CMAKE_INTDIR=\"Debug\";opengpws_EXPORTS</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\brodh\Dropbox\FS_utts\development\opengpws\src\opengpws;C:\Users\brodh\Dropbox\FS_utts\development\opengpws\src\PUBLIC;C:\Users\brodh\Dropbox\FS_utts\development\libacfutils\src;\include;C:\Users\brodh\Dropbox\FS_utts\development\opengpws\src\..;C:\Users\brodh\Dropbox\FS_utts\development\opengpws\api\opengpws;C:\Program Files (x86)\OpenAL 1.1 SDK\include;C:\Users\brodh\Dropbox\FS_utts\development\libraries\shapelib;C:\Users\brodh\Dropbox\FS_utts\development\libraries\glew-2.3.1\include;C:\Users\brodh\Dropbox\FS_utts\development\libacfutils\SDK\CHeaders\XPLM;C:\Users\brodh\Dropbox\FS_utts\development\libacfutils\SDK\CHeaders\Widgets;C:\Users\brodh\Dropbox\FS_utts\development\libacfutils\SDK\CHeaders\Wrappers;\include\AL;C:\Users\brodh\Dropbox\FS_utts\development\opengpws\..\api;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\brodh\Dropbox\FS_utts\development\opengpws\src\opengpws;C:\Users\brodh\Dropbox\FS_utts\development\opengpws\src\PUBLIC;C:\Users\brodh\Dropbox\FS_utts\development\libacfutils\src;\include;C:\Users\brodh\Dropbox\FS_utts\development\opengpws\src\..;C:\Users\brodh\Dropbox\FS_utts\development\opengpws\api\opengpws;C:\Program Files (x86)\OpenAL 1.1 SDK\include;C:\Users\brodh\Dropbox\FS_utts\development\libraries\shapelib;C:\Users\brodh\Dropbox\FS_utts\development\libraries\glew-2.3.1\include;C:\Users\brodh\Dropbox\FS_utts\development\libacfutils\SDK\CHeaders\XPLM;C:\Users\brodh\Dropbox\FS_utts\development\libacfutils\SDK\CHeaders\Widgets;C:\Users\brodh\Dropbox\FS_utts\development\libacfutils\SDK\CHeaders\Wrappers;\include\AL;C:\Users\brodh\Dropbox\FS_utts\development\opengpws\..\api;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>C:\Users\brodh\Dropbox\FS_utts\development\libacfutils\SDK\Libraries\Win\XPLM_64.lib;C:\Users\brodh\Dropbox\FS_utts\development\libacfutils\SDK\Libraries\Win\XPWidgets_64.lib;-lglu32;-lopengl32;-lws2_32;-lwinmm;-ldbghelp;-lpsapi;-lcrypt32;-lbcrypt;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64 /machine:x64 -undefined_warning -fvisibility=hidden -static-libgcc -static-libstdc++</AdditionalOptions>
+      <DataExecutionPrevention></DataExecutionPrevention>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImageHasSafeExceptionHandlers></ImageHasSafeExceptionHandlers>
+      <ImportLibrary>C:/Users/brodh/Dropbox/FS_utts/development/opengpws/build_release/src/Debug/OpenGPWS.xpl.lib</ImportLibrary>
+      <LinkErrorReporting></LinkErrorReporting>
+      <ProgramDataBaseFile>C:/Users/brodh/Dropbox/FS_utts/development/OpenGPWS/win_x64/Debug/OpenGPWS.xpl.pdb</ProgramDataBaseFile>
+      <RandomizedBaseAddress></RandomizedBaseAddress>
+      <SubSystem></SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Users\brodh\Dropbox\FS_utts\development\opengpws\src\opengpws;C:\Users\brodh\Dropbox\FS_utts\development\opengpws\src\PUBLIC;C:\Users\brodh\Dropbox\FS_utts\development\libacfutils\src;\include;C:\Users\brodh\Dropbox\FS_utts\development\opengpws\src\..;C:\Users\brodh\Dropbox\FS_utts\development\opengpws\api\opengpws;C:\Program Files (x86)\OpenAL 1.1 SDK\include;C:\Users\brodh\Dropbox\FS_utts\development\libraries\shapelib;C:\Users\brodh\Dropbox\FS_utts\development\libraries\glew-2.3.1\include;C:\Users\brodh\Dropbox\FS_utts\development\libacfutils\SDK\CHeaders\XPLM;C:\Users\brodh\Dropbox\FS_utts\development\libacfutils\SDK\CHeaders\Widgets;C:\Users\brodh\Dropbox\FS_utts\development\libacfutils\SDK\CHeaders\Wrappers;\include\AL;C:\Users\brodh\Dropbox\FS_utts\development\opengpws\..\api;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <ForceConformanceInForLoopScope></ForceConformanceInForLoopScope>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <MinimalRebuild></MinimalRebuild>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RemoveUnreferencedCodeData></RemoveUnreferencedCodeData>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <SupportJustMyCode></SupportJustMyCode>
+      <TreatWChar_tAsBuiltInType></TreatWChar_tAsBuiltInType>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;_GNU_SOURCE;_FILE_OFFSET_BITS=64;DEBUG;CHECK_RESULT_USED=__attribute__((warn_unused_result));PLUGIN_VERSION="";XPLM200=1;XPLM210=1;GLEW_BUILD=GLEW_STATIC;APL=0;IBM=1;LIN=0;_WIN32_WINNT=0x0600;CMAKE_INTDIR="Release";opengpws_EXPORTS</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+      <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;_GNU_SOURCE;_FILE_OFFSET_BITS=64;DEBUG;CHECK_RESULT_USED=__attribute__((warn_unused_result));PLUGIN_VERSION=\"\";XPLM200=1;XPLM210=1;GLEW_BUILD=GLEW_STATIC;APL=0;IBM=1;LIN=0;_WIN32_WINNT=0x0600;CMAKE_INTDIR=\"Release\";opengpws_EXPORTS</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\brodh\Dropbox\FS_utts\development\opengpws\src\opengpws;C:\Users\brodh\Dropbox\FS_utts\development\opengpws\src\PUBLIC;C:\Users\brodh\Dropbox\FS_utts\development\libacfutils\src;\include;C:\Users\brodh\Dropbox\FS_utts\development\opengpws\src\..;C:\Users\brodh\Dropbox\FS_utts\development\opengpws\api\opengpws;C:\Program Files (x86)\OpenAL 1.1 SDK\include;C:\Users\brodh\Dropbox\FS_utts\development\libraries\shapelib;C:\Users\brodh\Dropbox\FS_utts\development\libraries\glew-2.3.1\include;C:\Users\brodh\Dropbox\FS_utts\development\libacfutils\SDK\CHeaders\XPLM;C:\Users\brodh\Dropbox\FS_utts\development\libacfutils\SDK\CHeaders\Widgets;C:\Users\brodh\Dropbox\FS_utts\development\libacfutils\SDK\CHeaders\Wrappers;\include\AL;C:\Users\brodh\Dropbox\FS_utts\development\opengpws\..\api;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\brodh\Dropbox\FS_utts\development\opengpws\src\opengpws;C:\Users\brodh\Dropbox\FS_utts\development\opengpws\src\PUBLIC;C:\Users\brodh\Dropbox\FS_utts\development\libacfutils\src;\include;C:\Users\brodh\Dropbox\FS_utts\development\opengpws\src\..;C:\Users\brodh\Dropbox\FS_utts\development\opengpws\api\opengpws;C:\Program Files (x86)\OpenAL 1.1 SDK\include;C:\Users\brodh\Dropbox\FS_utts\development\libraries\shapelib;C:\Users\brodh\Dropbox\FS_utts\development\libraries\glew-2.3.1\include;C:\Users\brodh\Dropbox\FS_utts\development\libacfutils\SDK\CHeaders\XPLM;C:\Users\brodh\Dropbox\FS_utts\development\libacfutils\SDK\CHeaders\Widgets;C:\Users\brodh\Dropbox\FS_utts\development\libacfutils\SDK\CHeaders\Wrappers;\include\AL;C:\Users\brodh\Dropbox\FS_utts\development\opengpws\..\api;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>C:\Users\brodh\Dropbox\FS_utts\development\libacfutils\SDK\Libraries\Win\XPLM_64.lib;C:\Users\brodh\Dropbox\FS_utts\development\libacfutils\SDK\Libraries\Win\XPWidgets_64.lib;-lglu32;-lopengl32;-lws2_32;-lwinmm;-ldbghelp;-lpsapi;-lcrypt32;-lbcrypt;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64 /machine:x64 -undefined_warning -fvisibility=hidden -static-libgcc -static-libstdc++</AdditionalOptions>
+      <DataExecutionPrevention></DataExecutionPrevention>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImageHasSafeExceptionHandlers></ImageHasSafeExceptionHandlers>
+      <ImportLibrary>C:/Users/brodh/Dropbox/FS_utts/development/opengpws/build_release/src/Release/OpenGPWS.xpl.lib</ImportLibrary>
+      <LinkErrorReporting></LinkErrorReporting>
+      <ProgramDataBaseFile>C:/Users/brodh/Dropbox/FS_utts/development/OpenGPWS/win_x64/Release/OpenGPWS.xpl.pdb</ProgramDataBaseFile>
+      <RandomizedBaseAddress></RandomizedBaseAddress>
+      <SubSystem></SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Users\brodh\Dropbox\FS_utts\development\opengpws\src\opengpws;C:\Users\brodh\Dropbox\FS_utts\development\opengpws\src\PUBLIC;C:\Users\brodh\Dropbox\FS_utts\development\libacfutils\src;\include;C:\Users\brodh\Dropbox\FS_utts\development\opengpws\src\..;C:\Users\brodh\Dropbox\FS_utts\development\opengpws\api\opengpws;C:\Program Files (x86)\OpenAL 1.1 SDK\include;C:\Users\brodh\Dropbox\FS_utts\development\libraries\shapelib;C:\Users\brodh\Dropbox\FS_utts\development\libraries\glew-2.3.1\include;C:\Users\brodh\Dropbox\FS_utts\development\libacfutils\SDK\CHeaders\XPLM;C:\Users\brodh\Dropbox\FS_utts\development\libacfutils\SDK\CHeaders\Widgets;C:\Users\brodh\Dropbox\FS_utts\development\libacfutils\SDK\CHeaders\Wrappers;\include\AL;C:\Users\brodh\Dropbox\FS_utts\development\opengpws\..\api;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <ForceConformanceInForLoopScope></ForceConformanceInForLoopScope>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <MinimalRebuild></MinimalRebuild>
+      <Optimization>MinSpace</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RemoveUnreferencedCodeData></RemoveUnreferencedCodeData>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <SupportJustMyCode></SupportJustMyCode>
+      <TreatWChar_tAsBuiltInType></TreatWChar_tAsBuiltInType>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;_GNU_SOURCE;_FILE_OFFSET_BITS=64;DEBUG;CHECK_RESULT_USED=__attribute__((warn_unused_result));PLUGIN_VERSION="";XPLM200=1;XPLM210=1;GLEW_BUILD=GLEW_STATIC;APL=0;IBM=1;LIN=0;_WIN32_WINNT=0x0600;CMAKE_INTDIR="MinSizeRel";opengpws_EXPORTS</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+      <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;_GNU_SOURCE;_FILE_OFFSET_BITS=64;DEBUG;CHECK_RESULT_USED=__attribute__((warn_unused_result));PLUGIN_VERSION=\"\";XPLM200=1;XPLM210=1;GLEW_BUILD=GLEW_STATIC;APL=0;IBM=1;LIN=0;_WIN32_WINNT=0x0600;CMAKE_INTDIR=\"MinSizeRel\";opengpws_EXPORTS</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\brodh\Dropbox\FS_utts\development\opengpws\src\opengpws;C:\Users\brodh\Dropbox\FS_utts\development\opengpws\src\PUBLIC;C:\Users\brodh\Dropbox\FS_utts\development\libacfutils\src;\include;C:\Users\brodh\Dropbox\FS_utts\development\opengpws\src\..;C:\Users\brodh\Dropbox\FS_utts\development\opengpws\api\opengpws;C:\Program Files (x86)\OpenAL 1.1 SDK\include;C:\Users\brodh\Dropbox\FS_utts\development\libraries\shapelib;C:\Users\brodh\Dropbox\FS_utts\development\libraries\glew-2.3.1\include;C:\Users\brodh\Dropbox\FS_utts\development\libacfutils\SDK\CHeaders\XPLM;C:\Users\brodh\Dropbox\FS_utts\development\libacfutils\SDK\CHeaders\Widgets;C:\Users\brodh\Dropbox\FS_utts\development\libacfutils\SDK\CHeaders\Wrappers;\include\AL;C:\Users\brodh\Dropbox\FS_utts\development\opengpws\..\api;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\brodh\Dropbox\FS_utts\development\opengpws\src\opengpws;C:\Users\brodh\Dropbox\FS_utts\development\opengpws\src\PUBLIC;C:\Users\brodh\Dropbox\FS_utts\development\libacfutils\src;\include;C:\Users\brodh\Dropbox\FS_utts\development\opengpws\src\..;C:\Users\brodh\Dropbox\FS_utts\development\opengpws\api\opengpws;C:\Program Files (x86)\OpenAL 1.1 SDK\include;C:\Users\brodh\Dropbox\FS_utts\development\libraries\shapelib;C:\Users\brodh\Dropbox\FS_utts\development\libraries\glew-2.3.1\include;C:\Users\brodh\Dropbox\FS_utts\development\libacfutils\SDK\CHeaders\XPLM;C:\Users\brodh\Dropbox\FS_utts\development\libacfutils\SDK\CHeaders\Widgets;C:\Users\brodh\Dropbox\FS_utts\development\libacfutils\SDK\CHeaders\Wrappers;\include\AL;C:\Users\brodh\Dropbox\FS_utts\development\opengpws\..\api;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>C:\Users\brodh\Dropbox\FS_utts\development\libacfutils\SDK\Libraries\Win\XPLM_64.lib;C:\Users\brodh\Dropbox\FS_utts\development\libacfutils\SDK\Libraries\Win\XPWidgets_64.lib;-lglu32;-lopengl32;-lws2_32;-lwinmm;-ldbghelp;-lpsapi;-lcrypt32;-lbcrypt;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64 /machine:x64 -undefined_warning -fvisibility=hidden -static-libgcc -static-libstdc++</AdditionalOptions>
+      <DataExecutionPrevention></DataExecutionPrevention>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImageHasSafeExceptionHandlers></ImageHasSafeExceptionHandlers>
+      <ImportLibrary>C:/Users/brodh/Dropbox/FS_utts/development/opengpws/build_release/src/MinSizeRel/OpenGPWS.xpl.lib</ImportLibrary>
+      <LinkErrorReporting></LinkErrorReporting>
+      <ProgramDataBaseFile>C:/Users/brodh/Dropbox/FS_utts/development/OpenGPWS/win_x64/MinSizeRel/OpenGPWS.xpl.pdb</ProgramDataBaseFile>
+      <RandomizedBaseAddress></RandomizedBaseAddress>
+      <SubSystem></SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Users\brodh\Dropbox\FS_utts\development\opengpws\src\opengpws;C:\Users\brodh\Dropbox\FS_utts\development\opengpws\src\PUBLIC;C:\Users\brodh\Dropbox\FS_utts\development\libacfutils\src;\include;C:\Users\brodh\Dropbox\FS_utts\development\opengpws\src\..;C:\Users\brodh\Dropbox\FS_utts\development\opengpws\api\opengpws;C:\Program Files (x86)\OpenAL 1.1 SDK\include;C:\Users\brodh\Dropbox\FS_utts\development\libraries\shapelib;C:\Users\brodh\Dropbox\FS_utts\development\libraries\glew-2.3.1\include;C:\Users\brodh\Dropbox\FS_utts\development\libacfutils\SDK\CHeaders\XPLM;C:\Users\brodh\Dropbox\FS_utts\development\libacfutils\SDK\CHeaders\Widgets;C:\Users\brodh\Dropbox\FS_utts\development\libacfutils\SDK\CHeaders\Wrappers;\include\AL;C:\Users\brodh\Dropbox\FS_utts\development\opengpws\..\api;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <ForceConformanceInForLoopScope></ForceConformanceInForLoopScope>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <MinimalRebuild></MinimalRebuild>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RemoveUnreferencedCodeData></RemoveUnreferencedCodeData>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <SupportJustMyCode></SupportJustMyCode>
+      <TreatWChar_tAsBuiltInType></TreatWChar_tAsBuiltInType>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;_GNU_SOURCE;_FILE_OFFSET_BITS=64;DEBUG;CHECK_RESULT_USED=__attribute__((warn_unused_result));PLUGIN_VERSION="";XPLM200=1;XPLM210=1;GLEW_BUILD=GLEW_STATIC;APL=0;IBM=1;LIN=0;_WIN32_WINNT=0x0600;CMAKE_INTDIR="RelWithDebInfo";opengpws_EXPORTS</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;_GNU_SOURCE;_FILE_OFFSET_BITS=64;DEBUG;CHECK_RESULT_USED=__attribute__((warn_unused_result));PLUGIN_VERSION=\"\";XPLM200=1;XPLM210=1;GLEW_BUILD=GLEW_STATIC;APL=0;IBM=1;LIN=0;_WIN32_WINNT=0x0600;CMAKE_INTDIR=\"RelWithDebInfo\";opengpws_EXPORTS</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\brodh\Dropbox\FS_utts\development\opengpws\src\opengpws;C:\Users\brodh\Dropbox\FS_utts\development\opengpws\src\PUBLIC;C:\Users\brodh\Dropbox\FS_utts\development\libacfutils\src;\include;C:\Users\brodh\Dropbox\FS_utts\development\opengpws\src\..;C:\Users\brodh\Dropbox\FS_utts\development\opengpws\api\opengpws;C:\Program Files (x86)\OpenAL 1.1 SDK\include;C:\Users\brodh\Dropbox\FS_utts\development\libraries\shapelib;C:\Users\brodh\Dropbox\FS_utts\development\libraries\glew-2.3.1\include;C:\Users\brodh\Dropbox\FS_utts\development\libacfutils\SDK\CHeaders\XPLM;C:\Users\brodh\Dropbox\FS_utts\development\libacfutils\SDK\CHeaders\Widgets;C:\Users\brodh\Dropbox\FS_utts\development\libacfutils\SDK\CHeaders\Wrappers;\include\AL;C:\Users\brodh\Dropbox\FS_utts\development\opengpws\..\api;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\brodh\Dropbox\FS_utts\development\opengpws\src\opengpws;C:\Users\brodh\Dropbox\FS_utts\development\opengpws\src\PUBLIC;C:\Users\brodh\Dropbox\FS_utts\development\libacfutils\src;\include;C:\Users\brodh\Dropbox\FS_utts\development\opengpws\src\..;C:\Users\brodh\Dropbox\FS_utts\development\opengpws\api\opengpws;C:\Program Files (x86)\OpenAL 1.1 SDK\include;C:\Users\brodh\Dropbox\FS_utts\development\libraries\shapelib;C:\Users\brodh\Dropbox\FS_utts\development\libraries\glew-2.3.1\include;C:\Users\brodh\Dropbox\FS_utts\development\libacfutils\SDK\CHeaders\XPLM;C:\Users\brodh\Dropbox\FS_utts\development\libacfutils\SDK\CHeaders\Widgets;C:\Users\brodh\Dropbox\FS_utts\development\libacfutils\SDK\CHeaders\Wrappers;\include\AL;C:\Users\brodh\Dropbox\FS_utts\development\opengpws\..\api;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>C:\Users\brodh\Dropbox\FS_utts\development\libacfutils\SDK\Libraries\Win\XPLM_64.lib;C:\Users\brodh\Dropbox\FS_utts\development\libacfutils\SDK\Libraries\Win\XPWidgets_64.lib;-lglu32;-lopengl32;-lws2_32;-lwinmm;-ldbghelp;-lpsapi;-lcrypt32;-lbcrypt;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64 /machine:x64 -undefined_warning -fvisibility=hidden -static-libgcc -static-libstdc++</AdditionalOptions>
+      <DataExecutionPrevention></DataExecutionPrevention>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImageHasSafeExceptionHandlers></ImageHasSafeExceptionHandlers>
+      <ImportLibrary>C:/Users/brodh/Dropbox/FS_utts/development/opengpws/build_release/src/RelWithDebInfo/OpenGPWS.xpl.lib</ImportLibrary>
+      <LinkErrorReporting></LinkErrorReporting>
+      <ProgramDataBaseFile>C:/Users/brodh/Dropbox/FS_utts/development/OpenGPWS/win_x64/RelWithDebInfo/OpenGPWS.xpl.pdb</ProgramDataBaseFile>
+      <RandomizedBaseAddress></RandomizedBaseAddress>
+      <SubSystem></SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\brodh\Dropbox\FS_utts\development\opengpws\src\CMakeLists.txt">
+      <UseUtf8Encoding>Always</UseUtf8Encoding>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule C:/Users/brodh/Dropbox/FS_utts/development/opengpws/src/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+"C:\Program Files (x86)\Microsoft Visual Studio\18\BuildTools\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -SC:/Users/brodh/Dropbox/FS_utts/development/opengpws -BC:/Users/brodh/Dropbox/FS_utts/development/opengpws/build_release --check-stamp-file C:/Users/brodh/Dropbox/FS_utts/development/opengpws/build_release/src/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\brodh\Dropbox\FS_utts\development\opengpws\build_release\src\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule C:/Users/brodh/Dropbox/FS_utts/development/opengpws/src/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"C:\Program Files (x86)\Microsoft Visual Studio\18\BuildTools\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -SC:/Users/brodh/Dropbox/FS_utts/development/opengpws -BC:/Users/brodh/Dropbox/FS_utts/development/opengpws/build_release --check-stamp-file C:/Users/brodh/Dropbox/FS_utts/development/opengpws/build_release/src/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\brodh\Dropbox\FS_utts\development\opengpws\build_release\src\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule C:/Users/brodh/Dropbox/FS_utts/development/opengpws/src/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+"C:\Program Files (x86)\Microsoft Visual Studio\18\BuildTools\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -SC:/Users/brodh/Dropbox/FS_utts/development/opengpws -BC:/Users/brodh/Dropbox/FS_utts/development/opengpws/build_release --check-stamp-file C:/Users/brodh/Dropbox/FS_utts/development/opengpws/build_release/src/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Users\brodh\Dropbox\FS_utts\development\opengpws\build_release\src\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule C:/Users/brodh/Dropbox/FS_utts/development/opengpws/src/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+"C:\Program Files (x86)\Microsoft Visual Studio\18\BuildTools\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -SC:/Users/brodh/Dropbox/FS_utts/development/opengpws -BC:/Users/brodh/Dropbox/FS_utts/development/opengpws/build_release --check-stamp-file C:/Users/brodh/Dropbox/FS_utts/development/opengpws/build_release/src/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\brodh\Dropbox\FS_utts\development\opengpws\build_release\src\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="C:\Users\brodh\Dropbox\FS_utts\development\opengpws\api\opengpws\xplane_api.h" />
+    <ClCompile Include="C:\Users\brodh\Dropbox\FS_utts\development\opengpws\src\dbg_log.c" />
+    <ClInclude Include="C:\Users\brodh\Dropbox\FS_utts\development\opengpws\src\dbg_log.h" />
+    <ClCompile Include="C:\Users\brodh\Dropbox\FS_utts\development\opengpws\src\egpws.c" />
+    <ClInclude Include="C:\Users\brodh\Dropbox\FS_utts\development\opengpws\src\egpws.h" />
+    <ClCompile Include="C:\Users\brodh\Dropbox\FS_utts\development\opengpws\src\snd_sys.c" />
+    <ClInclude Include="C:\Users\brodh\Dropbox\FS_utts\development\opengpws\src\snd_sys.h" />
+    <ClCompile Include="C:\Users\brodh\Dropbox\FS_utts\development\opengpws\src\terr.c" />
+    <ClInclude Include="C:\Users\brodh\Dropbox\FS_utts\development\opengpws\src\terr.h" />
+    <ClCompile Include="C:\Users\brodh\Dropbox\FS_utts\development\opengpws\src\xplane.c" />
+    <ClInclude Include="C:\Users\brodh\Dropbox\FS_utts\development\opengpws\src\xplane.h" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <ProjectReference Include="C:\Users\brodh\Dropbox\FS_utts\development\opengpws\build_release\ZERO_CHECK.vcxproj">
+      <Project>{2D961F22-ECFA-3893-B73B-036C1D5EBFFC}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

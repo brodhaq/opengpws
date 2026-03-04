@@ -11,38 +11,39 @@
  * http://www.illumos.org/license/CDDL.
  *
  * CDDL HEADER END
-*/
+ */
 /*
  * Copyright 2017 Saso Kiselkov. All rights reserved.
  */
 
-#ifndef	_OPENGPWS_TERR_H_
-#define	_OPENGPWS_TERR_H_
+#ifndef _OPENGPWS_TERR_H_
+#define _OPENGPWS_TERR_H_
 
 #include <acfutils/geom.h>
-#include <opengpws/xplane_api.h>
+#include "../api/opengpws/xplane_api.h"
 
 #ifdef __cplusplus
-extern "C" {
+extern "C"
+{
 #endif
 
-void terr_init(void);
-void terr_fini(void);
+    void terr_init(void);
+    void terr_fini(void);
 
-void terr_set_pos(geo_pos3_t pos);
-void terr_set_ranges(const egpws_range_t *new_rngs);
-double terr_get_elev(geo_pos2_t pos);
-double terr_get_elev_wide(geo_pos2_t pos, geo_pos3_t out_pos[9]);
-void terr_probe(egpws_terr_probe_t *probe);
-bool_t terr_have_data(geo_pos2_t pos, double *tile_load_res);
+    void terr_set_pos(geo_pos3_t pos);
+    void terr_set_ranges(const egpws_range_t *new_rngs);
+    double terr_get_elev(geo_pos2_t pos);
+    double terr_get_elev_wide(geo_pos2_t pos, geo_pos3_t out_pos[9]);
+    void terr_probe(egpws_terr_probe_t *probe);
+    bool_t terr_have_data(geo_pos2_t pos, double *tile_load_res);
 
-void terr_render(const egpws_render_t *render);
-fpp_t terr_render_get_fpp(const egpws_render_t *render);
+    void terr_render(const egpws_render_t *render);
+    fpp_t terr_render_get_fpp(const egpws_render_t *render);
 
-void terr_reload_gl_progs(void);
+    void terr_reload_gl_progs(void);
 
 #ifdef __cplusplus
 }
 #endif
 
-#endif	/* _OPENGPWS_TERR_H_ */
+#endif /* _OPENGPWS_TERR_H_ */

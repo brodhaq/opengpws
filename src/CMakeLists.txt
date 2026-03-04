@@ -74,9 +74,14 @@ else()
 endif()
 
 include_directories(opengpws PUBLIC
-    "${LIBACFUTILS}/src"
-    "${GLEW_PREFIX}/include"
-    "..")
+	"${LIBACFUTILS}/src"
+	"${GLEW_PREFIX}/include"
+	".."
+	"${CMAKE_SOURCE_DIR}/api/opengpws"
+	"C:/Program Files (x86)/OpenAL 1.1 SDK/include"
+	"C:/Users/brodh/Dropbox/FS_utts/development/libraries/shapelib"
+	"C:/Users/brodh/Dropbox/FS_utts/development/libraries/glew-2.3.1/include"
+)
 
 #compiler flags
 set(CMAKE_C_FLAGS "${CMAKE_C_FLAGS} -Wall -Wextra -Werror --std=c11 \
